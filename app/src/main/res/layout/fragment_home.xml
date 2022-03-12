@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_ip"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginRight="0dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="default value" />
+
+        <Spinner
+            android:id="@+id/spinner_ip"
+            android:layout_width="28dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:entries="@array/sort"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@color/white"
+        app:rippleColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="54dp"
+        tools:listitem="@layout/recycler_view_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</FrameLayout>

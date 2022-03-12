@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string-array name="sort">
+        <item>Mặc định</item>
+        <item>Tăng dần</item>
+        <item>Giảm dần</item>
+    </string-array>
+    <string-array name="myarray">
+        <item>Hôm nay</item>
+        <item>Ngày mai</item>
+    </string-array>
+    <string name = "channel_name">Channel A</string>
+    <string name = "channel_description">Channel A</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
